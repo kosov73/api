@@ -5,8 +5,6 @@ WORKDIR /app
 
 RUN pip install flask
 
-ENV STORAGE_TYPE=memory
-
 EXPOSE 5000
 
 CMD ["flask", "run", "--host", "0.0.0.0"]
